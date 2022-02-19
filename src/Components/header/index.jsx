@@ -1,11 +1,12 @@
-import { Header as HeaderStyled, LogoBox, Logo, TextBox, HeadingPrimary, ButtonWhite } from "./styles";
-import logo from "../../assets/img/logo-white.png";
+import { Header as HeaderStyled, LogoBox, Logo, TextBox, ButtonWhite } from "./styles";
+import { HeadingPrimary } from '../../styles/typography';
+import { LogoWhite } from '../../assets/img';
 
 export function Header() {
     return (
         <HeaderStyled>
             <LogoBox>
-                <Logo src={logo} alt="logo" />
+                <Logo src={LogoWhite} alt="logo" />
             </LogoBox>
             
             <TextBox>

@@ -1,58 +1,15 @@
-import styled, { keyframes } from 'styled-components';
-import heroImage from '../../assets/img/hero.jpg'
+import styled from 'styled-components';
+import { moveInBottom } from '../../styles/animations';
+import { Hero } from '../../assets/img';
 
-// =+=+=+=+=+=+Animtions=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
-const moveInLeft = keyframes`
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-`;
-
-const moveInRight = keyframes`
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-    80% {
-        transform: translateX(-1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-`;
-
-const moveInBottom = keyframes`
-    0% {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-`;
-
-// =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
 export const Header = styled.header`
     height: 95vh;
     background-image: linear-gradient(to right bottom,
         rgba(126, 213, 111, .8),
         rgba(40, 180, 131, .8)),
-        url(${heroImage});
+        url(${Hero});
     background-size: cover;
     background-position: top;
     position: relative;
@@ -78,32 +35,9 @@ export const TextBox = styled.div`
     text-align: center;
 `;
 
-export const HeadingPrimary = styled.h1`
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-
-    span.heding-primary-main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-        animation: ${moveInLeft} 1s;
-    }
-
-    span.heding-primary-sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.7rem;
-        animation: ${moveInRight} 1s;
-    }
-`;
-
 export const ButtonWhite = styled.a`
-    background-color: #fff !important;
-    color: #777;
+    background-color: var(--color-white) !important;
+    color: var(--grey-dark);
     animation: ${moveInBottom} .5s ease-out .75s;
     animation-fill-mode: backwards;
 
@@ -115,7 +49,7 @@ export const ButtonWhite = styled.a`
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: var(--default-font-size);
     }
 
     &:hover {
@@ -142,7 +76,7 @@ export const ButtonWhite = styled.a`
     }
 
     .btn-white::after {
-        background-color: #fff;
+        background-color: var(--color-white);
     }
 
     .btn-white:hover::after {

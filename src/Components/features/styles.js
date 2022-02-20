@@ -11,7 +11,7 @@ export const SectionFeatures = styled.div`
   background-size: cover;
 
   transform: skewY(-7deg);
-  margin-top: -10rem;
+  margin-top: -18rem;
 
   & > * {
     transform: skewY(7deg);
@@ -23,7 +23,7 @@ export const FetureBox = styled.div`
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
-  border-radius: .3rem;
+  border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
   transition: transform .3s;
 

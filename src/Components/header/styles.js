@@ -13,6 +13,7 @@ export const Header = styled.header`
     background-size: cover;
     background-position: top;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 `;
 
@@ -46,7 +47,7 @@ export const ButtonWhite = styled.a`
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
-        border-radius: 10rem;
+        border-radius: 100px;
         transition: all .2s;
         position: relative;
         font-size: var(--default-font-size);

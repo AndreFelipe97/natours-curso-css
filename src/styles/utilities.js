@@ -15,3 +15,11 @@ export const UMarginBottomMedium = styled.div`
 export const UMarginBottomBig = styled.div`
   margin-bottom: 8rem;
 `;
+
+export const UMarginTopBig = styled.div`
+  margin-top: 8rem;
+`;
+
+export const UMarginTopHuge = styled.div`
+  margin-top: 10rem;
+`;

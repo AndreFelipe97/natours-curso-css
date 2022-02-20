@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
         --color-white: #FFF;
         --color-black: #000;
         --color-grey-light-1: #F7F7F7;
+        --color-grey-light-2: #EEE;
+
+        --color-secondary-light: #ffb900;
+        --color-secondary-dark: #ff7730;
+        --color-tertiary-light: #2998ff;
+        --color-tertiary-dark: #5643fa;
 
         --default-font-size: 1.6rem;
 

@@ -4,8 +4,6 @@ import { Header,
   Features,
   Tours,
   Stories,
-  Booking,
-  Footer
 } from './Components';
 
 function App() {

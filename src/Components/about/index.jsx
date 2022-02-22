@@ -1,4 +1,5 @@
-import { SectionAbout, BtnText, Composition } from './styles';
+import { SectionAbout, Composition } from './styles';
+import { BtnText } from '../../styles/buttons';
 import { HeadingSecondary, HeadingTertiary, Paragraph } from '../../styles/typography';
 import { UCenterText, UMarginBottomSmall, UMarginBottomBig } from '../../styles/utilities';
 

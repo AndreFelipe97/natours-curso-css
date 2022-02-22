@@ -16,8 +16,8 @@ function App() {
       <About />
       <Features />
       <Tours />
-      {/* <Stories />
-      <Booking />
+      <Stories />
+      {/* <Booking />
       <Footer /> */}
 
       {/* <section className='grid-test'>

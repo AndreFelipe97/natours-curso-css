@@ -92,7 +92,7 @@ export const CardDetails = styled.div`
   ul {
     list-style: none;
     width: 80%;
-    color: var(--color-grey-dark);
+    color: var(--color-grey-dark-1);
     margin: 0 auto;
 
     li {
@@ -132,7 +132,7 @@ export const PriceValue = styled.p`
 
 export const BtnCard = styled.a`
   background-color: var(--color-white) !important;
-  color: var(--color-grey-dark);
+  color: var(--color-grey-dark-1);
 
   &:link, &:visited {
       text-transform: uppercase;

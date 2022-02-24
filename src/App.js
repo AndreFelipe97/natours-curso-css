@@ -4,6 +4,7 @@ import { Header,
   Features,
   Tours,
   Stories,
+  Booking
 } from './Components';
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
       <Features />
       <Tours />
       <Stories />
-      {/* <Booking />
-      <Footer /> */}
+      <Booking />
+      {/* <Footer /> */}
 
       {/* <section className='grid-test'>
         <div className='row'>

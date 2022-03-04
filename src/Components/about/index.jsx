@@ -7,7 +7,7 @@ import { Nat1Large, Nat2Large, Nat3Large } from '../../assets/img';
 
 export function About() {
   return (
-    <main>
+    <main id="about">
       <SectionAbout>
         <UCenterText>
           <UMarginBottomBig>

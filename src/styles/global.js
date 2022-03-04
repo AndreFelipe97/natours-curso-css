@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
         --color-grey-light-2: #EEE;
         --color-grey-dark-1: #777;
         --color-grey-dark-2: #999;
+        --color-grey-dark-3: #333;
 
 
         --color-secondary-light: #ffb900;
@@ -35,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         font-size: 62.5%;
+        scroll-behavior: smooth;
     }
 
     body {

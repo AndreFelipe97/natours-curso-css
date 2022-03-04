@@ -6,7 +6,7 @@ import { Nat8, Nat9, Video, VideoWebm } from '../../assets/img';
 
 export function Stories() {
   return (
-    <SectionStories>
+    <SectionStories id="stories">
       <BgVideo>
         <video className='bg-video__content' autoPlay={true} muted={true} loop={true}>
           <source src={Video} type="video/mp4" />

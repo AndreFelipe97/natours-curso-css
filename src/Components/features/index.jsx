@@ -6,7 +6,7 @@ import { HeadingTertiary } from '../../styles/typography';
 
 export function Features() {
   return (
-    <SectionFeatures>
+    <SectionFeatures id="features">
       <div className="row">
         <div className="col-1-of-4">
           <FetureBox>

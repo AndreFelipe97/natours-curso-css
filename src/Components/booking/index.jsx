@@ -4,7 +4,7 @@ import { HeadingSecondary } from '../../styles/typography';
 
 export function Booking() {
   return (
-    <SectionBook>
+    <SectionBook id="book">
       <div className="row">
         <Book>
           <BookForm>

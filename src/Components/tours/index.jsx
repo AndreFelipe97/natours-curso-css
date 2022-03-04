@@ -5,7 +5,7 @@ import { SectionTours, Card, CardPicture, CardHeading, CardDetails, CardCta, Pri
 
 export function Tours() {
   return (
-    <SectionTours>
+    <SectionTours id="tours">
       <UCenterText>
         <UMarginBottomBig>
           <HeadingSecondary>

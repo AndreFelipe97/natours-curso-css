@@ -4,20 +4,23 @@ import { Header,
   Features,
   Tours,
   Stories,
-  Booking
+  Booking,
+  Footer
 } from './Components';
+import { Navigation } from './Components/navigation';
 
 function App() {
   return (
     <>
       <GlobalStyle />
+      <Navigation />
       <Header />
       <About />
       <Features />
       <Tours />
       <Stories />
       <Booking />
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <section className='grid-test'>
         <div className='row'>

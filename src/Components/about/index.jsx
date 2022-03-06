@@ -16,7 +16,6 @@ import { Nat1Large, Nat2Large, Nat3Large } from "../../assets/img";
 export function About() {
   return (
     <main id="about">
-      <h1>Teste</h1>
       <SectionAbout>
         <UCenterText>
           <UMarginBottomBig>

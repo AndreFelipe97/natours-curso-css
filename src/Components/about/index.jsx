@@ -1,13 +1,22 @@
-import { SectionAbout, Composition } from './styles';
-import { BtnText } from '../../styles/buttons';
-import { HeadingSecondary, HeadingTertiary, Paragraph } from '../../styles/typography';
-import { UCenterText, UMarginBottomSmall, UMarginBottomBig } from '../../styles/utilities';
+import { SectionAbout, Composition } from "./styles";
+import { BtnText } from "../../styles/buttons";
+import {
+  HeadingSecondary,
+  HeadingTertiary,
+  Paragraph,
+} from "../../styles/typography";
+import {
+  UCenterText,
+  UMarginBottomSmall,
+  UMarginBottomBig,
+} from "../../styles/utilities";
 
-import { Nat1Large, Nat2Large, Nat3Large } from '../../assets/img';
+import { Nat1Large, Nat2Large, Nat3Large } from "../../assets/img";
 
 export function About() {
   return (
     <main id="about">
+      <h1>Teste</h1>
       <SectionAbout>
         <UCenterText>
           <UMarginBottomBig>
@@ -16,15 +25,18 @@ export function About() {
             </HeadingSecondary>
           </UMarginBottomBig>
         </UCenterText>
-        <div className='row'>
-          <div className='col-1-of-2'>
+        <div className="row">
+          <div className="col-1-of-2">
             <HeadingTertiary>
               <UMarginBottomSmall>
                 You're going to fall in love with nature
               </UMarginBottomSmall>
-              </HeadingTertiary>
+            </HeadingTertiary>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet corrupti voluptatibus voluptates nostrum? Soluta provident, praesentium id sunt autem dolore delectus. Beatae esse mollitia numquam vel doloremque ipsam corporis?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+              eveniet corrupti voluptatibus voluptates nostrum? Soluta
+              provident, praesentium id sunt autem dolore delectus. Beatae esse
+              mollitia numquam vel doloremque ipsam corporis?
             </Paragraph>
 
             <HeadingTertiary>
@@ -33,17 +45,22 @@ export function About() {
               </UMarginBottomSmall>
             </HeadingTertiary>
             <Paragraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores nulla deserunt voluptatum nam.
             </Paragraph>
-            <BtnText href='#'>
-              Learn more &rarr;
-            </BtnText>
+            <BtnText href="#">Learn more &rarr;</BtnText>
           </div>
-          <div className='col-1-of-2'>
+          <div className="col-1-of-2">
             <Composition>
-              <img src={Nat1Large} alt="Photo 1" className="composition__photo composition__photo--p1" />
-              <img src={Nat2Large} alt="Photo 2" className="composition__photo composition__photo--p2" />
-              <img src={Nat3Large} alt="Photo 3" className="composition__photo composition__photo--p3" />
+              {[Nat1Large, Nat2Large, Nat3Large].map((image, index) => (
+                <img
+                  src={image}
+                  alt={`${index + 1}`}
+                  className={`composition__photo composition__photo--p${
+                    index + 1
+                  }`}
+                />
+              ))}
             </Composition>
           </div>
         </div>

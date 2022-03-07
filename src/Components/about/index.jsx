@@ -55,6 +55,7 @@ export function About() {
                 <img
                   src={image}
                   alt={`${index + 1}`}
+                  key={index}
                   className={`composition__photo composition__photo--p${
                     index + 1
                   }`}

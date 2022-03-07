@@ -1,6 +1,18 @@
-import { SectionBook, Book, BookForm, Form, FormGroup, Input, Label, FormRadioGroup, RadioInput, RadioLabel, BtnBooking } from './styles';
-import { UCenterText, UMarginBottomMedium } from '../../styles/utilities';
-import { HeadingSecondary } from '../../styles/typography';
+import {
+  SectionBook,
+  Book,
+  BookForm,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+  FormRadioGroup,
+  RadioInput,
+  RadioLabel,
+} from "./styles";
+import { UCenterText, UMarginBottomMedium } from "../../styles/utilities";
+import { HeadingSecondary } from "../../styles/typography";
+import { BtnBooking } from "../../styles/buttons";
 
 export function Booking() {
   return (
@@ -11,31 +23,45 @@ export function Booking() {
             <Form>
               <UCenterText>
                 <UMarginBottomMedium>
-                  <HeadingSecondary>
-                    Start bookinng now
-                  </HeadingSecondary>
+                  <HeadingSecondary>Start bookinng now</HeadingSecondary>
                 </UMarginBottomMedium>
               </UCenterText>
               <FormGroup>
-                <Input className='form__input' type="text" placeholder='Full Name' id='name' required />
-                <Label htmlFor="name" className="form__label">Full Name</Label>
+                <Input
+                  className="form__input"
+                  type="text"
+                  placeholder="Full Name"
+                  id="name"
+                  required
+                />
+                <Label htmlFor="name" className="form__label">
+                  Full Name
+                </Label>
               </FormGroup>
               <FormGroup>
-                <Input className='form__input' type="email" placeholder='Email address' id='email' required />
-                <Label htmlFor="email" className="form__label">Email address</Label>
+                <Input
+                  className="form__input"
+                  type="email"
+                  placeholder="Email address"
+                  id="email"
+                  required
+                />
+                <Label htmlFor="email" className="form__label">
+                  Email address
+                </Label>
               </FormGroup>
               <UMarginBottomMedium>
                 <FormGroup>
                   <FormRadioGroup>
-                    <RadioInput type="radio" id="small" name='size' />
-                    <RadioLabel htmlFor='small'>
+                    <RadioInput type="radio" id="small" name="size" />
+                    <RadioLabel htmlFor="small">
                       <span></span>
                       Small tour group
                     </RadioLabel>
                   </FormRadioGroup>
                   <FormRadioGroup>
-                    <RadioInput type="radio" id="large" name='size' />
-                    <RadioLabel htmlFor='large'>
+                    <RadioInput type="radio" id="large" name="size" />
+                    <RadioLabel htmlFor="large">
                       <span></span>
                       Large tour group
                     </RadioLabel>

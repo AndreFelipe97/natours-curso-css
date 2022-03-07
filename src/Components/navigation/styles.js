@@ -32,19 +32,19 @@ export const NavigationBackground = styled.div`
   right: 6.5rem;
   background-image: radial-gradient(var(--color-primary-light), var(--color-primary-dark));
   z-index: 1000;
-  transition: all .8s;
+  transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
 `;
 
 export const NavigationNav = styled.nav`
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: opacity .8s;
+  transition: all .8s;
 `;
 
 export const NavigationList = styled.ul`

@@ -8,10 +8,11 @@ import { Header,
   Footer
 } from './Components';
 import { Navigation } from './Components/navigation';
+import {PopupProvider} from './contexts/popupContext';
 
 function App() {
   return (
-    <>
+    <PopupProvider>
       <GlobalStyle />
       <Navigation />
       <Header />
@@ -84,7 +85,7 @@ function App() {
           </div>
         </div>
       </section> */}
-    </>
+    </PopupProvider>
   );
 }
 

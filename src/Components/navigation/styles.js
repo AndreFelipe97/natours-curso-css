@@ -21,6 +21,18 @@ export const NaviToggle = styled.button`
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem  3rem rgba(0, 0, 0, .1);
+  text-align: center;
+  cursor: pointer;
+
+  @media only screen and (max-width: 56.25em)  {
+      top: 4rem;
+      right: 4rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    top: 3rem;
+    right: 3rem;
+  }
 `;
 
 export const NavigationBackground = styled.div`
@@ -33,6 +45,16 @@ export const NavigationBackground = styled.div`
   background-image: radial-gradient(var(--color-primary-light), var(--color-primary-dark));
   z-index: 1000;
   transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+  @media only screen and (max-width: 56.25em)  {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
 `;
 
 export const NavigationNav = styled.nav`

@@ -1,5 +1,5 @@
 import {createGlobalStyle, css} from 'styled-components';
-import { ClearFix } from './mixins';
+import { ClearFix, Respond, RespondPhone, RespondTabletPortrait, RespondTabletLandscape, RespondBigDesktop } from './mixins';
 
 const GlobalStyle = createGlobalStyle`
     :root {
@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 
         --grid-width: 114rem;
         --gutter-vertical: 8rem;
+        --gutter-vertical-small: 6rem;
         --gutter-horizontal: 6rem;
     }
     *, *::after, *::before {
@@ -37,6 +38,21 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 62.5%;
         scroll-behavior: smooth;
+
+        // tab-land
+        @media only screen and (max-width: 75em)  {
+            font-size: 56.25%;
+        }
+
+        //tab-port
+        @media only screen and (max-width: 56.25em)  {
+            font-size: 50%;
+        }
+
+        // big-desktop
+        @media only screen and (min-width: 112.5em) {
+            font-size: 75%;
+        }
     }
 
     body {
@@ -47,6 +63,10 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-grey-dark);
         padding: 3rem;
         box-sizing: border-box;
+
+        @media only screen and (max-width: 56.25em)  {
+            padding: 0;
+        }
     }
 
     .row {
@@ -55,6 +75,15 @@ const GlobalStyle = createGlobalStyle`
 
         &:not(:last-child) {
             margin-bottom: var(--gutter-vertical);
+
+            @media only screen and (max-width: 56.25em)  {
+                margin-bottom: var(--gutter-vertical-small);
+            }
+        }
+
+        @media only screen and (max-width: 56.25em)  {
+            max-width: 50rem;
+            padding: 0 3rem;
         }
 
         ${ClearFix}
@@ -64,6 +93,15 @@ const GlobalStyle = createGlobalStyle`
 
             &:not(:last-child) {
                 margin-right: var(--gutter-horizontal);
+             
+                @media only screen and (max-width: 56.25em)  {
+                    margin-right: 0;
+                    margin-bottom: var(--gutter-vertical-small);
+                }
+            }
+
+            @media only screen and (max-width: 56.25em)  {
+                width: 100% !important;
             }
         }
 

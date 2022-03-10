@@ -13,6 +13,11 @@ export const HeadingPrimary = styled.h1`
         font-weight: 400;
         letter-spacing: 3.5rem;
         animation: ${moveInLeft} 1s;
+
+        @media only screen and (max-width: 37.5em) {
+          letter-spacing: 1rem;
+          font-size: 5rem;
+        } 
     }
 
     span.heding-primary-sub {
@@ -21,6 +26,10 @@ export const HeadingPrimary = styled.h1`
         font-weight: 700;
         letter-spacing: 1.7rem;
         animation: ${moveInRight} 1s;
+
+        @media only screen and (max-width: 37.5em) {
+          letter-spacing: .5rem;
+        } 
     }
 `;
 
@@ -38,6 +47,14 @@ export const HeadingSecondary = styled.h2`
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s;
+
+  @media only screen and (max-width: 56.25em)  {
+      font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

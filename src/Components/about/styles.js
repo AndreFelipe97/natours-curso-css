@@ -9,6 +9,10 @@ export const SectionAbout = styled.section`
 export const Composition = styled.div`
   position: relative;
 
+  @media only screen and (max-width: 56.25em)  {
+    margin-bottom: 7rem;
+  }
+
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);

@@ -5,6 +5,10 @@ export const Footer = styled.footer`
   padding: 10rem 0;
   font-size: 1.4rem;
   color: var(--color-grey-light-1);
+
+  @media only screen and (max-width: 56.25em)  {
+    padding: 8rem 0;
+  }
 `;
 
 export const FooterLogoBox = styled.div`
@@ -21,6 +25,11 @@ export const FooterNavigation = styled.div`
   border-top: 1px solid var(--color-grey-dark-1);
   padding-top: 2rem;
   display: inline-block;
+
+  @media only screen and (max-width: 56.25em)  {
+    width: 100%;
+    text-align: center;
+  }
 
   ul {
 
@@ -58,4 +67,9 @@ export const Copyright = styled.p`
   padding-top: 2rem;
   width: 80%;
   float: right;
+
+  @media only screen and (max-width: 56.25em)  {
+    width: 100%;
+    float: none;
+  }
 `;

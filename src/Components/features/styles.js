@@ -16,6 +16,10 @@ export const SectionFeatures = styled.div`
   & > * {
     transform: skewY(7deg);
   }
+
+  @media only screen and (max-width: 56.25em)  {
+    padding: 10rem 0;
+  }
 `;
 
 export const FetureBox = styled.div`
@@ -27,10 +31,18 @@ export const FetureBox = styled.div`
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
   transition: transform .3s;
 
+  @media only screen and (max-width: 56.25em)  {
+    padding: 2rem;
+  }
+
   svg {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
+
+    @media only screen and (max-width: 56.25em)  {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {

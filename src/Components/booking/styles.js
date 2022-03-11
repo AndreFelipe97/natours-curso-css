@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import { Nat10 } from '../../assets/img';
-import { moveInBottom } from '../../styles/animations';
 
 export const SectionBook = styled.section`
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+
+  @media only screen and (max-width: 56.25em)  {
+    padding: 10rem 0;
+  }
 `;
 
 export const Book = styled.div`

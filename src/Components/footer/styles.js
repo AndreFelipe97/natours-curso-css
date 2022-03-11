@@ -14,6 +14,10 @@ export const Footer = styled.footer`
 export const FooterLogoBox = styled.div`
   text-align: center;
   margin-bottom: 8rem;
+
+  @media only screen and (max-width: 56.25em)  {
+    margin-bottom: 6rem;
+  }
 `;
 
 export const FooterLogoImage = styled.img`

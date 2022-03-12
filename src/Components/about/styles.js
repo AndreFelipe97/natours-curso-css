@@ -37,6 +37,12 @@ export const Composition = styled.div`
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
       z-index: 20;
+
+      @media only screen and (max-width: 56.25em)  {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 101;
+      }
     }
   }
 

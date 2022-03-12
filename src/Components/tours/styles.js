@@ -52,6 +52,29 @@ export const Card = styled.div`
   &:hover .card__side--back {
     transform: rotateY(0);
   }
+
+  @media only screen and (max-width: 56.25em)  {
+    height: auto;
+    border-radius: 3px;
+    background-color: var(--color-white);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+
+    .card__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+    }
+
+    .card__side--back {
+      transform: rotateY(0);
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+
+
+    &:hover .card__side--front {
+      transform: rotateY(0);
+    }
+  }
 `;
 
 export const CardPicture = styled.div`
@@ -93,6 +116,10 @@ export const CardHeading = styled.h4`
 export const CardDetails = styled.div`
   padding: 3rem;
 
+  @media only screen and (max-width: 56.25em)  {
+    padding: 1rem 3rem;
+  }
+
   ul {
     list-style: none;
     width: 80%;
@@ -118,10 +145,23 @@ export const CardCta = styled.div`
   transform: translate(-50%, -50%);
   width: 90%;
   text-align: center;
+
+  @media only screen and (max-width: 56.25em)  {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
 `;
 
 export const PriceBox = styled.div`
   margin-bottom: 8rem;
+
+  @media only screen and (max-width: 56.25em)  {
+    margin-bottom: 3rem;
+  }
 `;
 
 export const PriceOnly = styled.p`
@@ -132,6 +172,10 @@ export const PriceOnly = styled.p`
 export const PriceValue = styled.p`
   font-size: 6rem;
   font-weight: 100;
+
+  @media only screen and (max-width: 56.25em)  {
+    font-size: 4rem;
+  }
 `;
 
 export const BtnCard = styled.a`

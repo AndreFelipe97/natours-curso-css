@@ -15,12 +15,27 @@ export const Book = styled.div`
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
-  height: 50rem;
+
+  @media only screen and (max-width: 75em)  {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, .9) 65%, transparent 65%), url(${Nat10});
+  }
+
+  @media only screen and (max-width: 56.25em)  {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, .9) 100%), url(${Nat10});
+  }
 `;
 
 export const BookForm = styled.div`
   width: 50%;
   padding: 6rem;
+
+  @media only screen and (max-width: 75em)  {
+    width: 65%;
+  }
+
+  @media only screen and (max-width: 56.25em)  {
+    width: 100%;
+  }
 `;
 
 export const Form = styled.form``;
@@ -34,6 +49,11 @@ export const FormGroup = styled.div`
 export const FormRadioGroup = styled.div`
   width: 49%;
   display: inline-block;
+
+  @media only screen and (max-width: 56.25em)  {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -48,6 +68,10 @@ export const Input = styled.input`
   width: 100%;
   display: block;
   transition: all .3s;
+
+  @media only screen and (max-width: 56.25em)  {
+    width: 100%;
+  }
 
   &::-webkit-input-placeholder {
     color: var(--color-grey-dark-2);

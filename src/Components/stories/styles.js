@@ -24,6 +24,16 @@ export const Story = styled.div`
     transform: skewX(12deg);
   }
 
+  @media only screen and (max-width: 56.25em)  {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    transform: skewX(0);
+  }
+
   .img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -66,10 +76,18 @@ export const Shape = styled.figure`
   clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
+
+  @media only screen and (max-width: 37.5em) {
+    transform: translateX(-3rem) skewX(0);
+  }
 `;
 
 export const StoryText = styled.div`
   transform: skewX(12deg);
+
+  @media only screen and (max-width: 37.5em) {
+    transform: skewX(0);
+  }
 `;
 
 export const BgVideo = styled.div`

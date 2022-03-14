@@ -20,7 +20,7 @@ export const FooterLogoBox = styled.div`
   }
 `;
 
-export const FooterLogoImage = styled.img`
+export const FooterLogoImage = styled.picture`
   width: 15rem;
   height: auto;
 `;

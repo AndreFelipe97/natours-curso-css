@@ -1,11 +1,14 @@
 import { Footer as FooterStyled, FooterLogoBox, FooterLogoImage, FooterNavigation, FooterLink, Copyright } from './styles';
-import { LogoGreen2x } from '../../assets/img';
+import { LogoGreen1x, LogoGreen2x, LogoGreenSmall1x, LogoGreenSmall2x } from '../../assets/img';
 
 export function Footer() {
   return (
    <FooterStyled>
       <FooterLogoBox>
-        <FooterLogoImage src={LogoGreen2x} alt="Full logo" />
+        <FooterLogoImage>
+          <source srcSet={`${LogoGreenSmall1x} 1x, ${LogoGreenSmall2x} 2x`} media='(max-width: 37.5em)' />
+          <img srcSet={`${LogoGreen1x} 1x, ${LogoGreen2x} 2x`} alt="Full logo" />
+        </FooterLogoImage>
       </FooterLogoBox>
       <div className="row">
         <div className="col-1-of-2">

@@ -11,7 +11,7 @@ import {
   UMarginBottomBig,
 } from "../../styles/utilities";
 
-import { Nat1Large, Nat2Large, Nat3Large } from "../../assets/img";
+import { Nat1, Nat1Large, Nat2, Nat2Large, Nat3, Nat3Large } from "../../assets/img";
 
 export function About() {
   return (
@@ -51,9 +51,11 @@ export function About() {
           </div>
           <div className="col-1-of-2">
             <Composition>
-              {[Nat1Large, Nat2Large, Nat3Large].map((image, index) => (
+              {[[Nat1, Nat1Large], [Nat2, Nat2Large], [Nat3, Nat3Large]].map((image, index) => (
                 <img
-                  src={image}
+                  srcSet={`${image[0]} 300w, ${image[1]} 1000w`}
+                  src={image[1]}
+                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, (max-width: 600px) 30vw, 300px"
                   alt={`${index + 1}`}
                   key={index}
                   className={`composition__photo composition__photo--p${

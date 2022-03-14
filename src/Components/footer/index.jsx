@@ -7,7 +7,7 @@ export function Footer() {
       <FooterLogoBox>
         <FooterLogoImage>
           <source srcSet={`${LogoGreenSmall1x} 1x, ${LogoGreenSmall2x} 2x`} media='(max-width: 37.5em)' />
-          <img srcSet={`${LogoGreen1x} 1x, ${LogoGreen2x} 2x`} alt="Full logo" />
+          <img srcSet={`${LogoGreen1x} 1x, ${LogoGreen2x} 2x`} src={LogoGreen2x} alt="Full logo" />
         </FooterLogoImage>
       </FooterLogoBox>
       <div className="row">

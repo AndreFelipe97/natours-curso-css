@@ -53,12 +53,17 @@ export const HeadingSecondary = styled.h2`
   }
 
   @media only screen and (max-width: 37.5em) {
+    margin-top: 1rem;
     font-size: 2.5rem;
   }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba(0, 0 ,0, .2);
+
+    @media only screen and (max-width: 37.5em) {
+      transform: none;
+    }
   }
 `;
 

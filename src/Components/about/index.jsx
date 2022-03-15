@@ -55,7 +55,7 @@ export function About() {
                 <img
                   srcSet={`${image[0]} 300w, ${image[1]} 1000w`}
                   src={image[1]}
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, (max-width: 600px) 30vw, 300px"
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                   alt={`${index + 1}`}
                   key={index}
                   className={`composition__photo composition__photo--p${

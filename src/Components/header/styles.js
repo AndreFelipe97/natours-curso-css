@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { moveInBottom } from '../../styles/animations';
-import { Hero } from '../../assets/img';
+import { Hero, HeroSmall } from '../../assets/img';
 
 
 
@@ -9,12 +9,19 @@ export const Header = styled.header`
     background-image: linear-gradient(to right bottom,
         rgba(126, 213, 111, .8),
         rgba(40, 180, 131, .8)),
-        url(${Hero});
+        url(${HeroSmall});
     background-size: cover;
     background-position: top;
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        background-image: linear-gradient(to right bottom,
+            rgba(126, 213, 111, .8),
+            rgba(40, 180, 131, .8)),
+            url(${Hero});
+    }
 
     @media only screen and (max-width: 37.5em) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

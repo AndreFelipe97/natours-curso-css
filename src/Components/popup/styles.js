@@ -9,6 +9,8 @@ export const Popup = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, .8);
   z-index: 9999;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 `;
 
 export const PopupContent = styled.div`
@@ -20,11 +22,20 @@ export const PopupContent = styled.div`
   border-radius: 3px;
   display: table;
   overflow: hidden;
+
+  @media only screen and (max-width: 56.25em)  {
+    display: block;
+    overflow: auto;
+  }
 `;
 
 export const PopupLeft = styled.div`
   width: 33.333333%;
   display: table-cell;
+
+  @media only screen and (max-width: 56.25em)  {
+    display: none;
+  }
 `;
 
 export const PopupRight = styled.div`

@@ -24,7 +24,7 @@ export function Popup() {
         <PopupLeft>
           {imgs.map((img, index) => (
             <PopupImg src={img} alt="tour" key={index} />
-          ))}{" "}
+          ))}
         </PopupLeft>
         <PopupRight>
           <ClosePopup onClick={popupOpen} href="#tours">

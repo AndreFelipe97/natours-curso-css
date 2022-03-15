@@ -68,6 +68,10 @@ const GlobalStyle = createGlobalStyle`
             padding: 0;
         }
     }
+    ::selection {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
 
     .row {
         max-width: var(--grid-width);
